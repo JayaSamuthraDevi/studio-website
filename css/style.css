@@ -2,7 +2,7 @@
 
 :root{
     --transition: all 300ms ease-in-out;
-    --dark-color: #332e29;
+    --dark-color: #494c4d;
     --light-color: #fff;
 }
 
@@ -56,6 +56,9 @@ h1, h2, h3{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.gap-2{
+    gap: 2rem;
 }
 .py-7{
     padding: 7rem 0;
@@ -118,7 +121,6 @@ h1, h2, h3{
 /* about */
 .about-left{
     margin-bottom: 4rem;
-    height: 480px;
     overflow: hidden;
 }
 /* button down and title -reusable */
@@ -277,18 +279,37 @@ h1, h2, h3{
 .footer-content > div:first-child{
     margin-bottom: 3rem;
 }
-.footer-content > div:first-child div{
+.footer-content img{
     width: 100px;
     height: 100px;
     overflow: hidden;
-    margin: 5rem auto;
+    margin: 3rem auto;
     border-radius: 50%;
+    object-fit: cover;
 }
-
-
+.testimonial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.testimonial h3{
+    font-weight: 100;
+}
+.testimonial h3 span{
+    font-style: italic;
+    font-size: 16px;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-4{
+    margin-bottom: 4rem;
+}
 /* Media Queries */
 
-@media(min-width: 450px){
+@media(min-width: 376px){
     .work-bottom{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 3rem;
